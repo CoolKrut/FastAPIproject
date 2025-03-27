@@ -64,3 +64,4 @@ async def get_current_user(db: sqlalchemy.orm.Session = fastapi.Depends(get_db),
     if user is None:
         raise credentials_exception
     return user
+

@@ -8,6 +8,7 @@ from task_manager.database import engine, get_db
 app = FastAPI()
 
 
+
 @app.get("/")
 def read_root():
     return {"message": "Welcome, write /docs!"}
